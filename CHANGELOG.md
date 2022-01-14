@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.5.1-1]
+### Changed
+- A checkbox is available on Dashboard page to enable notifition when components change. This checkbox is disabled by default.
+- Add a link on status page on notification email
+
 ## [2.5.1]
 
 ### Fixed

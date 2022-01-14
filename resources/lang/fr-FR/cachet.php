@@ -81,6 +81,7 @@ return [
         'unsubscribe'         => 'Se désabonner',
         'button'              => 'S\'abonner',
         'manage_subscription' => 'Gérer l\'abonnement',
+        'statuspage'          => 'Page de statut',
         'manage'              => [
             'notifications'       => 'Notifications',
             'notifications_for'   => 'Gérer les notifications pour',

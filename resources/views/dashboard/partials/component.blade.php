@@ -16,5 +16,6 @@
             </div>
         </div>
         <input type="hidden" name="component_id" value="{{ $component->id }}">
+        <input type="hidden" class="component_notify" name="component_notify">
     </form>
 </li>

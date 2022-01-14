@@ -87,6 +87,8 @@ class NewIncidentNotification extends Notification
                         'unsubscribeUrl'         => cachet_route('subscribe.unsubscribe', $notifiable->verify_code),
                         'manageSubscriptionText' => trans('cachet.subscriber.manage_subscription'),
                         'manageSubscriptionUrl'  => $manageUrl,
+                        'statuspageText'         => trans('cachet.subscriber.statuspage'),
+                        'statuspageUrl'          => cachet_route('status-page'), 
                     ]);
     }
 

@@ -17,6 +17,24 @@
                     <div class="alert alert-info hidden" id="update-alert">{!! trans('cachet.system.update') !!}</div>
                 </div>
             </div>
+             <!-- DEBUT -->
+             <input type="hidden" name="notify" value="0">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="notify" onchange="changeNotif(this)">
+                    {{ trans('forms.incidents.notify_subscribers') }}
+                </label>
+            </div>
+            <script>
+            function changeNotif(obj){
+            var value = obj.checked;
+            var x = document.getElementsByClassName("component_notify");
+                for (i = 0; i < x.length; i++) {
+                x[i].value=value;
+                }
+            }
+            </script>
+            <!-- FIN -->
 
             <div class="row">
               <div class="col-md-12">
