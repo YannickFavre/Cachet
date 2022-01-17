@@ -37,10 +37,10 @@ return [
         'posted'       => 'Posted :timestamp by :username',
         'posted_at'    => 'Posted at :timestamp',
         'status'       => [
-            1 => 'Enquête en cours',
-            2 => 'Identifié',
+            1 => 'Analyse en cours',
+            2 => 'Correction en cours',
             3 => 'Sous surveillance',
-            4 => 'Corrigé',
+            4 => 'Clôturé',
         ],
     ],
 

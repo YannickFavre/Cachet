@@ -98,7 +98,7 @@
                         <div class="form-group">
                             <label for="message">{{ trans('forms.incidents.message') }}</label>
                             <div class="markdown-control">
-                                <textarea name="message" class="form-control autosize" rows="5" required>{{ Binput::old('message') }}</textarea>
+                                <textarea name="message" class="form-control autosize" rows="20" required>{{ Binput::old('message') }}</textarea>
                             </div>
                         </div>
                     </fieldset>

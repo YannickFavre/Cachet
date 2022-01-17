@@ -162,7 +162,7 @@ return [
         'verified'             => 'Vérifié',
         'not_verified'         => 'Non vérifié',
         'subscriber'           => ':email, abonné à :date',
-        'no_subscriptions'     => 'Souscrire à toutes les mises à jour',
+        'no_subscriptions'     => 'Aucune souscription',
         'global'               => 'Abonné globalement',
         'add'                  => [
             'title'   => 'Ajouter un abonné',
