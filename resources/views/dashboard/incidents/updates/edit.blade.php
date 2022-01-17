@@ -67,7 +67,7 @@
                     <div class="form-group">
                         <label>{{ trans('forms.incidents.message') }}</label>
                         <div class="markdown-control">
-                            <textarea name="message" class="form-control autosize" rows="5" required>{{ $update->message }}</textarea>
+                            <textarea name="message" class="form-control autosize" rows="20" required>{{ $update->message }}</textarea>
                         </div>
                     </div>
                 </fieldset>
