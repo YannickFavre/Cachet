@@ -80,8 +80,8 @@ return [
         'verify' => [
             'mail' => [
                 'subject' => 'Vérifier votre abonnement',
-                'content' => 'Cliquer pour vérifier votre abonnement à :app_name status page.',
-                'title'   => 'Vérifier votre abonnement à :app_name status page.',
+                'content' => 'Merci de cliquer sur « Vérifier » ci-dessus afin de confirmer votre adresse email et votre abonnement.',
+                'title'   => 'Bonjour, vous êtes abonnés à la page de suivi des incidents de production sur les Solutions AVMP’UP (TEL4B, FAXBIS, SMSBIS, DEMAT’MANAGER, SVI, TRUNKSIP)',
                 'action'  => 'Vérifier',
             ],
         ],

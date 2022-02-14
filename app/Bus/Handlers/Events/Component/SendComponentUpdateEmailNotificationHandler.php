@@ -68,9 +68,13 @@ class SendComponentUpdateEmailNotificationHandler
         }
 
         // YF - Don't notify if checkbox not checked
-        if ($_POST["component_notify"] == "false" || $_POST["component_notify"] == ""){
-            return;
-        } 
+        if (array_key_exists('component_notify', $_POST)) {
+            if ($_POST["component_notify"] == "false" || $_POST["component_notify"] == ""){
+                return;
+            } 
+        } else return;
+        
+
         
         // First notify all global subscribers.
         $globalSubscribers = $this->subscriber->isVerified()->isGlobal()->get();
