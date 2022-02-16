@@ -97,7 +97,6 @@ return [
                 'html'          => '<p>Le statut du composant :component_name a été mis à jour. Il est maintenant en l\'état: \'<b>:component_human_status</b>\'.</p><p>Merci, :app_name</p>',
                 'tooltip-title' => 'S\'abonner aux notifications pour :component_name.',
             ],
-            'statuspage'         => 'Page de statut',            ],
         ],
     ],
 

@@ -26,6 +26,8 @@
                             <small class="date">
                                 <a href="{{ cachet_route('incident', ['id' => $incident->id]) }}" class="links"><abbr class="timeago" data-toggle="tooltip" data-placement="right" title="{{ $incident->timestamp_formatted }}" data-timeago="{{ $incident->timestamp_iso }}"></abbr></a>
                             </small>
+                            <p><i class="{{ $incident->latest_icon }}"><b style="color:grey">&nbsp&nbsp{{ $incident->latest_human_status }}</i></b></p>
+
                         </div>
                         <div class="panel-body markdown-body">
                             {!! $incident->formatted_message !!}

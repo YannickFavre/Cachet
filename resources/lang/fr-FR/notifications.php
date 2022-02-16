@@ -30,8 +30,8 @@ return [
     'incident' => [
         'new' => [
             'mail' => [
-                'subject'  => 'Nouvel incident signalé',
-                'greeting' => 'Un nouvel incident a été signalé pour :app_name.',
+                'subject'  => '[AVM Up] - Incident production',
+                'greeting' => 'Un incident a été signalé pour :app_name.',
                 'content'  => 'L\'incident :name a été signalé',
                 'action'   => 'Voir',
             ],
@@ -62,9 +62,9 @@ return [
     'schedule' => [
         'new' => [
             'mail' => [
-                'subject' => 'Nouvel événement planifié !',
+                'subject' => '[AVM Up] - Maintenance planifiée !',
                 'content' => ':name a été planifié pour le :date',
-                'title'   => 'Une nouvelle maintenance est planifiée.',
+                'title'   => 'Une maintenance est planifiée.',
                 'action'  => 'Voir',
             ],
             'slack' => [

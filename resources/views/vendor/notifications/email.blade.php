@@ -43,7 +43,7 @@
 @if (! empty($salutation))
 {{ $salutation }}
 @else
-@lang('Cordialement'),<br>{{ setting('app_name', config('app.name')) }}
+{{ trans('cachet.thanks') }},<br>{{ setting('app_name', config('app.name')) }}
 @endif
 
 {{-- Subcopy --}}

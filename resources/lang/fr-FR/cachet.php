@@ -30,8 +30,8 @@ return [
     // Incidents
     'incidents' => [
         'none'         => 'Aucun incident signalé',
-        'past'         => 'Incidents',
-        'stickied'     => 'Incidents épinglés',
+        'past'         => 'Historique d\'incidents',
+        'stickied'     => 'Incidents récents',
         'scheduled'    => 'Maintenance Planifiée',
         'scheduled_at' => ', planifé à :timestamp',
         'posted'       => 'Posted :timestamp by :username',
@@ -145,5 +145,5 @@ return [
     'rss-feed'        => 'RSS',
     'atom-feed'       => 'Atom',
     'feed'            => 'Flux des statuts',
-
+    'thanks'          => 'Cordialement',
 ];
