@@ -79,7 +79,7 @@ return [
     'subscriber' => [
         'verify' => [
             'mail' => [
-                'subject' => 'Vérifier votre abonnement',
+                'subject' => '[AVM Up] - Confirmation d\'abonnement au Suivi d\'Incidents',
                 'content' => 'Merci de cliquer sur « Vérifier » ci-dessus afin de confirmer votre adresse email et votre abonnement.',
                 'title'   => 'Bonjour, vous êtes abonnés à la page de suivi des incidents de production sur les Solutions AVMP’UP (TEL4B, FAXBIS, SMSBIS, DEMAT’MANAGER, SVI, TRUNKSIP)',
                 'action'  => 'Vérifier',

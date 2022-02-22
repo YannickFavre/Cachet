@@ -19,8 +19,6 @@
                         <li><a href="{{ cachet_route('auth.logout') }}">{{ trans('dashboard.logout') }}</a></li>
                     </ul>
                 </li>
-                @elseif($dashboardLink)
-                <li><a href="{{ cachet_route('dashboard') }}">{{ trans('dashboard.dashboard') }}</a></li>
                 @endif
             </ul>
         </div>

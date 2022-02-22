@@ -61,5 +61,4 @@
 @stop
 
 @section('bottom-content')
-@include('partials.footer')
 @stop

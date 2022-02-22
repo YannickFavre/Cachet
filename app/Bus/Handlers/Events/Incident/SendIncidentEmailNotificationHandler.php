@@ -67,12 +67,18 @@ class SendIncidentEmailNotificationHandler
         }
 
         // First notify all global subscribers.
-        $globalSubscribers = $this->subscriber->isVerified()->isGlobal()->get();
 
+        // YF - notify all verified subscription with global or at least one subscription
+        //$globalSubscribers = $this->subscriber->isVerified()->isGlobal()->get();
+        $globalSubscribers = $this->subscriber->isVerified()->get();
         $globalSubscribers->each(function ($subscriber) use ($incident) {
-            $subscriber->notify(new NewIncidentNotification($incident));
+            if ($subscriber->subscriptions->isNotEmpty()) {
+                $subscriber->notify(new NewIncidentNotification($incident));
+            }
         });
 
+        // YF - Not necessary to continue
+        /*
         if (!$incident->component) {
             return;
         }
@@ -89,5 +95,6 @@ class SendIncidentEmailNotificationHandler
             })->each(function ($subscriber) use ($incident) {
                 $subscriber->notify(new NewIncidentNotification($incident));
             });
+        */
     }
 }
