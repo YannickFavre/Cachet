@@ -77,7 +77,7 @@ class SendIncidentEmailNotificationHandler
             }
         });
 
-        // YF - Not necessary to continue
+        // YF - It's not necessary to continue
         /*
         if (!$incident->component) {
             return;
