@@ -194,7 +194,7 @@ class Incident extends Model implements HasPresenter
      */
     public function updates()
     {
-        return $this->hasMany(IncidentUpdate::class)->orderBy('created_at', 'desc');
+        return $this->hasMany(IncidentUpdate::class)->orderBy('created_at', 'asc');
     }
 
     /**
